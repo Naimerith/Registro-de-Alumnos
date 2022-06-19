@@ -1,0 +1,31 @@
+<div class="container">
+    <h3>{{titulo}}</h3>
+    <form [formGroup]="registroAlumno" class="form">
+        <div class="form-row">
+            <div class="form-group ">
+                <label for="inputName4">Nombre</label>
+                <input type="text" class="form-control" placeholder="Naimerith" formControlName="nombre" #newEvent>
+            </div>
+            <div class="form-group ">
+                <label for="inputApellido4">Apellido</label>
+                <input type="text" class="form-control" placeholder="Magdaleno" formControlName="apellido" #newEvent>
+            </div>
+        </div>
+        <div class="form-group ">
+            <label for="inputFecha">Fecha de Nacimiento</label>
+            <input type="date" class="form-control" placeholder="09/10/1989" formControlName="fechaNac" #newEvent>
+        </div>
+        <div class="form-group ">
+            <label for="inputDni">DNI</label>
+            <input type="text" class="form-control" placeholder="12345678" formControlName="dni" #newEvent>
+        </div>
+        <div class="form-group ">
+            <label for="inputTelefono">Telefono</label>
+            <input type="text" class="form-control" placeholder="+51 9999999" formControlName="telefono" #newEvent>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary mt-2" (click)="guardarRegistro()">Registrar</button>
+        </div>
+    </form>
+
+</div>

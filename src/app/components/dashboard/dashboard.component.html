@@ -1,0 +1,42 @@
+<app-header></app-header>
+
+<main>
+    <app-nuevo></app-nuevo>
+    <div class="container">
+        <h3>Registros de Alumnos</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Fecha Nacimiento</th>
+                    <th scope="col">DNI</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Editar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let registro of registros">
+                    <td>{{registro.nombre}}</td>
+                    <td>{{registro.apellido}}</td>
+                    <td>{{registro.fechaNac}}</td>
+                    <td>{{registro.dni}}</td>
+                    <td>{{registro.telefono}}</td>
+                    <td><button (click)="editarRegistroA(registro)">
+                            <fa-icon class="icon" [icon]="edit"></fa-icon>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</main>
+
+
+
+<!-- Abre el modal cuando cambia a true
+<div *ngIf="modalSwitch == true">
+    <app-nuevo (newEvent)="obtenerRegistro($event)"></app-nuevo>
+</div> -->
