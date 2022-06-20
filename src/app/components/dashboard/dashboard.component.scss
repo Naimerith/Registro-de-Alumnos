@@ -31,3 +31,17 @@ button {
 .btn {
     margin: 2px;
 }
+
+@media (max-width: 900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .table {
+        display: block;
+        overflow-x: auto;
+    }
+}

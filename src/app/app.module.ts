@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './plantillas/header/header.component';
-import { FooterComponent } from './plantillas/footer/footer.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
@@ -17,7 +16,6 @@ import { NuevoComponent } from './components/nuevo/nuevo.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
     DashboardComponent,
     NuevoComponent
   ],
